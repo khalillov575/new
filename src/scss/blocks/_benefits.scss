@@ -1,0 +1,324 @@
+.benefits {
+    margin-top: 450px;
+    
+}
+
+.benefits__title-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+   
+}
+
+.benefits__section-list {
+    @include reset-list;
+    display: block;
+    flex-wrap: wrap;
+
+    :nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+.first {
+    position: relative;
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 300px;
+        right: -180px;
+        width: 740px;
+        height: 150px;
+        background-image: url("../../img/svg/right-line.svg");
+        // o'ng  tepa tarafdagi strelka
+    }
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -510px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg");
+        // O'ng taraf tepadagi aylana
+    }
+}
+
+.second {
+    position: relative;
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: -510px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg") // chap tarfdagi aylana
+    }
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: -500px;
+        width: 740px;
+        height: 150px;
+        // transform: rotateY(180deg);
+        background-image: url("../../img/svg/left-line.svg");
+        // chap tarafdagi strelka
+    }
+
+}
+
+.three {
+    position: relative;
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -510px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg");
+        // o'ng taraf pasdagi aylana
+    }
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -490px;
+        width: 740px;
+        height: 150px;
+        background-image: url("../../img/svg/right-line.svg");
+        // o'ng  pasdagi tarafdagi strelka
+    }
+
+}
+
+.benefits__section-item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+.benefits__item-box {
+    padding: 0;
+    margin: 0;
+    width: 445px;
+    margin: 80px 120px;
+    display: block;
+}
+
+.benefits__item-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.benefits__item-text {
+    width: 445px;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+
+.benefits__section-link {
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 39px;
+    border: 3px solid transparent;
+    background-color: $yellow;
+    margin-top: 40px;
+
+    &:hover {
+        background-color: #fff;
+        border: 3px solid $yellow;
+        color: $yellow;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .benefits {
+        margin-top: 800px;
+        
+    }
+.benefits__section-list {
+    @include reset-list;
+    display: block;
+    margin: 0 auto;
+   
+    :nth-child(even) {
+        flex-direction: block;
+    }
+}
+.benefits__section-img{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first {
+    position: relative;
+    display: block;
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 300px;
+        left: 0;
+        width: 740px;
+        height: 150px;
+        background-image: url("../../img/svg/right-line.svg");
+        // o'ng  tepa tarafdagi strelka
+    }
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -400px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg");
+        // O'ng taraf tepadagi aylana
+    }
+}
+
+.second {
+    position: relative;
+    display: block;
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: -400px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg") // chap tarfdagi aylana
+    }
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: -400px;
+        width: 740px;
+        height: 150px;
+        // transform: rotateY(180deg);
+        background-image: url("../../img/svg/left-line.svg");
+        // chap tarafdagi strelka
+    }
+
+}
+
+.three {
+    position: relative;
+    display: block;
+
+    ::before {
+        position: absolute;
+        
+        content: '';
+        top: 0px;
+        right: -400px;
+        width: 445px;
+        height: 445px;
+        background-image: url("../../img/svg/circile.svg");
+        // o'ng taraf pasdagi aylana
+    }
+
+    ::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -490px;
+        width: 740px;
+        height: 150px;
+        background-image: url("../../img/svg/right-line.svg");
+        // o'ng  pasdagi tarafdagi strelka
+    }
+
+}
+
+.benefits__section-item {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.benefits__item-box {
+    padding: 0;
+    margin: 0;
+    width: 573px;
+    margin: none;
+    display: block;
+    text-align: center;
+}
+
+.benefits__item-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.benefits__item-text {
+    width: 573px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+
+.benefits__section-link {
+    font-family: 'Lexend Deca', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 39px;
+    border: 3px solid transparent;
+    background-color: $yellow;
+    margin-top: 40px;
+
+    &:hover {
+        background-color: #fff;
+        border: 3px solid $yellow;
+        color: $yellow;
+    }
+}
+}
